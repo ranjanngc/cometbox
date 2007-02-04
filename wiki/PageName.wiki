@@ -1,0 +1,26 @@
+#summary Info on the javascript class.
+
+= Introduction =
+
+Intended to handle all interaction with the comet host so that the end developer doesn't have to worry about any problems.
+
+= Basic Idea =
+
+Private functions are prefixed with an underscore ( _ ).
+
+{{{
+var cometbox = {
+  poll_interval: 30, //interval to poll for information when holding a connection wont work.
+
+  init: function(url, id) {
+    //initialize the class 
+  },
+  
+  stop: function() {
+    //stop waiting for information
+  }
+
+
+}
+}}}
+
