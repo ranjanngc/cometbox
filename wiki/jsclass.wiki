@@ -1,4 +1,5 @@
 #summary Info on the javascript class.
+#labels Phase-Requirements,Phase-Design
 
 = Introduction =
 
@@ -39,7 +40,6 @@ function cometboxCallback(data) {
 
 cometbox.init('http://www.blah.com:8181/', 'theusersid', cometboxCallback);
 }}}
-
 
 
 
