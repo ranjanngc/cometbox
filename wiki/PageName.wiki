@@ -6,21 +6,41 @@ Intended to handle all interaction with the comet host so that the end developer
 
 = Basic Idea =
 
-Private functions are prefixed with an underscore ( _ ).
-
+==== The Class ====
 {{{
 var cometbox = {
   poll_interval: 30, //interval to poll for information when holding a connection wont work.
 
-  init: function(url, id) {
-    //initialize the class 
+  // initialize the class
+  // url - url to the cometbox host
+  // id - users cometbox id
+  // callback - function called when data is received 
+  init: function(url, id, callback) {
+   
   },
-  
+
+  //stop waiting for information
   stop: function() {
-    //stop waiting for information
+    
+  },
+
+  //not gonna bother thinking up internals at this point
+  _internalCrap: function() {
+
   }
-
-
 }
 }}}
+
+==== Usage ====
+{{{
+function cometboxCallback(data) {
+  //do stuff with data
+}
+
+cometbox.init('http://www.blah.com:8181/', 'theusersid', cometboxCallback);
+}}}
+
+
+
+
 
